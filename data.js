@@ -1,3 +1,5 @@
+// agoraStatesDiscussions이라는 변수에 배열을 만들고 인덱스 1개 당 객체를 만들었다.
+// 그 객체의 키는 값 데이터의 이름(기본키)이고, 값은 개별 사용자에 대한 데이터를 갖는다.
 const agoraStatesDiscussions = [
   {
     id: "D_kwDOHOApLM4APjJi",
