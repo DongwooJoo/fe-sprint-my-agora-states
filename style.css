@@ -1,1 +1,60 @@
-/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discussions__container {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+
+.discussion__container { 
+    /* 이 클래스에 display: flex; 적용하니까 li의 점들이 사라짐. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.discussion__avatar--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* (확인 필요)이 작업이 이미지를 discussion 컴포넌트 높이의 중간에 오도록 정렬한게 확실한가? */
+    flex-grow: 1;
+}
+
+.discussion__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.discussion__answered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.discussion__avatar--image {
+    border-radius: 50%;
+    /* 이미지를 동그랗게 만드는 스타일은 이미지에 넣어야 한다. div가 아니라. */
+    width: 48px;
+}
+
+.discussion__information {
+    margin-left: auto;
+    /* 이 방법이 우측 정렬하는 유일한 방법인가? */
+}
